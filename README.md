@@ -42,3 +42,13 @@ sudo modprobe rt2x00usb
 ### enjoy wifi!
 
 ![](http://sdut-zrt.qiniudn.com/E62870D7-3FB5-4065-8FAC-E926A11070F8.png)
+
+
+add：
+调试时
+insmod os/linux/mt7601Usta.ko
+ifconfig ra0 up
+出错-->SIOCSIFFLAGS: Operation not permitted
+dmesg查看出错原因
+将固件RT2870STA.dat拷贝到/etc/Wireless/RT2870STA/RT2870STA.dat
+
